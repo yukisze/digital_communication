@@ -1,10 +1,10 @@
-%% part a %%
+%% part a
 [yorg,fs]=audioread('oilyrag.wav');
 yorg =  yorg(:,1);
 l = length(yorg);
 t = (0:l-1)/fs;
 
-%% part b %%
+%% part b 
 %subplot(3,1,1)
 figure(1)
 plot(t,yorg);
