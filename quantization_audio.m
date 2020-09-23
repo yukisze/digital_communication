@@ -32,12 +32,8 @@ title('3 bits Quantization');
 xlabel('Time (s)');
 
 %% e
-% signalMin = -1
-% signalMax = 1  %limite the signal between -1 and +1
-% scalingFactor = (signalMax-signalMin)/(2^b);
-% y_scaled = yorg / scalingFactor ;
-% scalingFactor = max(yorg)*(max(yorg)-steps);%the maximum part is being clipped off
 y_scaled = yorg*0.5; %scale down
+
 %% f
 %FOR CLIPPING
 new_notclipped = zeros(1,l);
